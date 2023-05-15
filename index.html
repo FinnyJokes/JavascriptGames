@@ -15,9 +15,13 @@
   </head>
   <body>
     <h1>JSGAME</h1>
+    <canvas id="myCanvas">
       <script src="mainGame.js">
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          ctx.context.rect(0, 0, 100, 100);
+          ctx.context.fillStyle = "blue";
       </script>
-      <canvas id="myCanvas">
-      </canvas>
+    </canvas>
   </body>
 </html>
